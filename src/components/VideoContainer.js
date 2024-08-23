@@ -12,14 +12,14 @@ const VideoContainer = () => {
     const data = await fetch(VIDEO_API);
     const json = await data.json();
     // console.log(json);
-    // console.log(json.items);
+    console.log(json.items);
     setVideoData(json.items);
   };
 
   return (
     <div className="flex flex-wrap">
       {videoData.map((video) => (
-        <Link to={"/watch?v=" + video.id}>
+        <Link to={"/watch?v=" + video.id} key={video.id}>
           <VideoCard key={video.id} info={video} />
         </Link>
       ))}

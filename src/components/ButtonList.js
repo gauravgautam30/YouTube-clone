@@ -9,9 +9,6 @@ const buttons = [
   "Bollywood",
   "News",
   "Cinema",
-  "Films",
-  "Shorts",
-  "Music",
 ];
 const ButtonList = () => {
   return (

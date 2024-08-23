@@ -1,8 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContainer";
 import { useSelector } from "react-redux";
-import store from "../utils/appStore";
 import { Outlet } from "react-router-dom";
 
 const Body = () => {
@@ -14,6 +12,7 @@ const Body = () => {
           <Sidebar />
         </div>
       ) : null}
+
       <Outlet />
     </div>
   );
